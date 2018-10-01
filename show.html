@@ -1,0 +1,29 @@
+<head>
+    <title>TODO App</title>
+</head>
+
+<body background="https://cdn-pro.elsalvador.com/wp-content/uploads/2017/02/05160647/1446750525812.jpg">
+
+<div style="background-color:#00cccc ; height: 60">
+    <a href = "{{ url_for('show_all') }}"> <h1><font  face="Broadway" color="white" size="15"> <p align="center">Welcome to Todo App</p> </font></h1></a>
+</div>
+<a href = "{{ url_for('add') }}"><h3> <font  face="Broadway" color="white" size="12"> <p align="center">Add The Task</p></font></h3></a>
+
+
+<table>
+         <thead>
+            <tr>
+               <th><font  face="Broadway" color="white" size="12"> <p align="center"> TASKS TO BE DONE :</p></font></h3></a> </th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+                  {{tasks.list}}
+               </tr>
+         </tbody>
+</table>
+
+
+</body>
+</html>

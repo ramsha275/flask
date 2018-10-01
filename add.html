@@ -1,0 +1,16 @@
+<head>
+    <title>Todo App</title>
+</head>
+
+<body>
+ <a href = "{{ url_for('show_all') }}"><h1><font  face="Broadway" color="white" size="15"> <p align="center">Home</p> </font></h1></a>
+ <br><br>
+<form action = "{{ request.path }}" method = "post" align="center"  >
+ <label for = "name">INSERT</label><br>
+<input style="font-size:35px ; font-align=center"  type = "text" name = "What's your new task ?"
+        size = "35"  placeholder="                What's your new task ?" maxlength="50" >
+<input type = "submit" value = "Submit" />
+
+</form>
+</body>
+</html>
